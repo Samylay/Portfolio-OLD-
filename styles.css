@@ -1,19 +1,31 @@
-:root{
-    --lightBackground : rgb(233, 247, 203);
-    --darkBackground : rgb(17, 17, 39);
-}
-*{
-    border: 1px black solid;
+* {
+  box-sizing: border-box;
 }
 
-
-.nav-links > ul{
-    list-style: none;
-    
-}
-.nav-links a{
-    text-decoration: none;
-    color: black;
-    
+:root {
+  --lightBackground: rgb(233, 247, 203);
+  --darkBackground: rgb(25, 25, 60);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--darkBackground);
+}
+
+.nav-links > ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;  
+  margin:1em ;
+  color: whitesmoke;
+}
